@@ -1,0 +1,254 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  opacity: 1;
+  transition: opacity 250ms var(--bezier-timing);
+}
+ .backdrop.is-hidden  {
+  opacity: 0;
+  pointer-events: none;
+  
+}
+.modalbackdrop .is-hidden  {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+ // width: 528px;
+  min-height: 581px;
+
+  transform: translate(-50%, -50%);
+  transition: transform 250ms var(--bezier-timing);
+
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+.modal__close:hover,
+.modal__close:focus {
+  fill: var(--text-color-accent);
+}
+
+.modal__close-icon:hover,
+.modal__close-icon:focus {
+  fill: var(--text-color-accent);
+}
+
+.form-container {
+ // width: 528px;
+  height: 581px;
+  padding: 40px;
+
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.form-header-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 12px;
+  text-align: center;
+}
+.form-sector {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-label {
+  display: block;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+
+  margin-bottom: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.form-input,
+.form-messege {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px 0 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+.form-message {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  font-family: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+.form-message:focus {
+  outline: 1px solid #2196f3;
+  border: 1px solid #2196f3;
+}
+.form-message::placeholder {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-title {
+  padding-bottom: 4px;
+
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transition: fill 250ms var(--bezier-timing),
+    outline 250ms var(--bezier-timing);
+}
+.form-input:focus {
+  outline: 1px solid #2196f3;
+}
+.form-input:focus ~ .form-icon {
+  fill: #2196f3;
+}
+.form-checkbox {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.checkbox-terms {
+   
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    cursor: pointer;
+}
+
+.checkbox-terms .terms-link {
+    color: var(--text-color-accent);
+    text-decoration: underline;
+}
+
+.checkbox {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  display: flex;
+}
+
+.checkbox-terms::before {
+    content: "";
+    display: inline-flex;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 7px;
+}
+
+.checkbox-icon {
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    opacity: 0;
+    pointer-events: none;
+    
+    background-color: var(--text-color-accent);
+    fill: var(--background-main-color);
+    border: 2px solid #2196F3;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.checkbox:focus {
+    outline-color: var(--text-color-accent);
+    border: 2px solid #2196F3;
+    border-radius: 2px;
+}
+
+.checkbox:checked + .checkbox-icon {
+    opacity: 1; 
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-origin: border-box;
+}
+
+.checkbox-button {
+    margin: 0 auto;
+}
+.sbm {
+
+  text-align: center;
+  //width: 200px;
+  height: 50px;
+  
+  margin: 0 124px;
+  
+  cursor: pointer;
+  margin-bottom: 0;
+
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+}
+.sbm-title {
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}

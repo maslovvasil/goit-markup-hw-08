@@ -1,0 +1,112 @@
+.projects {
+  display: block;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+/*.filter {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.filter__item {
+  margin-right: 8px;
+
+  &:last-child {
+  margin-right: 0;
+}
+}
+
+.filter__button {
+  color: var(--text-color-primary);
+  background-color: #f5f4fa;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+  color: #ffffff;
+  background-color: var(--text-color-accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+  transition: color 250ms var(--bezier-timing),
+    background-color 250ms var(--bezier-timing),
+    box-shadow 250ms var(--bezier-timing);
+}
+*/
+.filter {
+  display: flex;
+  margin-bottom: 40px;
+
+  @media screen and (max-width:767px) {
+    flex-wrap: wrap;
+    margin-top: -15px;
+  }
+
+  @media screen and (min-width:768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width:1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.filter__item {
+
+  &:not(:last-child)  {
+    margin-right: 8px;
+  }
+
+  @media screen and (max-width:767px) {
+    margin-top: 15px;
+}
+}
+
+.filter__button {
+  padding: 6px 22px;
+  background: #2196F3;
+  border: 0px;
+  border-radius: 4px;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color-primary);
+  cursor: pointer;
+
+  transform: scale(1);
+  transition: transform 250ms var(--bezier-timing);
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #2196F3;
+    box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    transform: scale(1.1);
+    transition: transform 250ms var(--bezier-timing);
+  }
+}
