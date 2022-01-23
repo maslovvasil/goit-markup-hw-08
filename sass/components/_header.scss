@@ -328,3 +328,17 @@ transition: color 250ms var(--bezier-timing);
         display: none;
     }
 }
+.header-nav--current  {
+  color: var(--text-color-accent);
+}
+ .header-nav--current::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 33px;
+
+  width: 100%;
+  height: 4px;
+  background-color: var(--text-color-accent);
+  border-radius: 2px;
+}
