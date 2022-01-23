@@ -124,8 +124,7 @@
 }
 
 .footer-address__list {
-  // display: inline-block;
-  // width: 231px;
+
   font-style: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -138,42 +137,4 @@
     margin-bottom: 0px;
     text-align: left;
   }
-/*
-  &__street {
-    display: inline-block;
-    margin-bottom: 8px;
-    color: #ffffff;
-    background: #2f303a;
-  }
-
-  &__mail,
-  &__phone {
-    display: inline-block;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
-
-    // transform: scale(1);
-    // transition: transform 250ms $timing-function;
-  }
-  */
 }
-/*
-.address__mail {
-  margin-bottom: 8px;
-  &:hover,
-  &:focus {
-    color: var(--text-color-accent);
-
-    transform: scale(1.1);
-    transition: transform 250ms var(--bezier-timing);
-  }
-}
-
-.address__phone:hover,
-.address__phone:focus {
-  color: var(--text-color-accent);
-
-  transform: scale(1.1);
-  transition: transform 250ms var(--bezier-timing);
-}
-*/
