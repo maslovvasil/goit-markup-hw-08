@@ -22,10 +22,13 @@
 }
   
 .features__item {
+
+
+
     &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
-      text-align: center;
+      
     }
   }
 
@@ -35,7 +38,7 @@
   }
 
     @media screen and (min-width: 1200px) {
-    width: 270px;
+   // width: 270px;
     margin: 0px;
 
       &:not(:last-child) {
@@ -55,9 +58,13 @@
 }
 
 .features__title {
-  
+        @media screen and (max-width: 767px) {
+      text-align: center;
+      
+    }
+
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
