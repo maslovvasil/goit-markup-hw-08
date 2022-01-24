@@ -446,7 +446,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     margin-right: 10px;
-    fill: currentColor;
+    fill: #000000;
     -webkit-transition: color 250ms var(--bezier-timing);
     -o-transition: color 250ms var(--bezier-timing);
     transition: color 250ms var(--bezier-timing);
@@ -1108,7 +1108,7 @@ img {
 .products__info-text {
   display: inline-block;
   position: absolute;
-  padding: 77px 24px;
+  padding: 24px;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
@@ -1168,7 +1168,7 @@ img {
   -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer__logo {
     text-align: center;
   }
@@ -1318,7 +1318,6 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-address__list {
     margin-bottom: 0px;
-    text-align: left;
   }
 }
 
