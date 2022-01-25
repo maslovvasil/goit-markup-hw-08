@@ -253,7 +253,7 @@
         font-size: 34px;
         line-height: 1.17;
         letter-spacing: 0.02em;
-       color: var(--text-color-accent);
+       color: #757575;
     }
 }
 .header-contacts__icon {
@@ -341,4 +341,7 @@ transition: color 250ms var(--bezier-timing);
   height: 4px;
   background-color: var(--text-color-accent);
   border-radius: 2px;
+      @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
