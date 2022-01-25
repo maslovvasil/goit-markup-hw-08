@@ -22,8 +22,8 @@
     
         <button type="button" class="header-button" aria-expanded="false" aria-controls="header-window" data-menu-button>
           <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-            <use class="icon-close" href="./images/symbol-defs.svg#close-mobile"></use>
-            <use class="icon-menu" href="./images/symbol-defs.svg#menu-mobile"></use>
+            <use class="icon-close" href="./images/symbol-defs.svg#modal-close"></use>
+            <use class="icon-menu" href="./images/symbol-defs2.svg#icon-menu"></use>
           </svg>
         </button>
         <div class="header-window" id="header-window" data-menu>
@@ -31,7 +31,7 @@
             <div class="header-navigation">
               <ul class="header-nav__list list">
                 <li class="header-nav__item">
-                  <a class="header-nav__link " href="./index.html">Студія</a>
+                  <a class="header-nav__link" href="./index.html">Студія</a>
                 </li>
                 <li class="header-nav__item">
                   <a class="header-nav__link header-nav--current" href="./portfolio.html">Портфоліо</a>
@@ -99,7 +99,16 @@
             <li class="products__item">
               <a href="#" class="products__link">
                   <div class="products__wrapper">
-                      <img src="images/img (5).jpg" width="370" class="products__info" alt="фото Веб-сайту">
+                    <picture>
+                      <source media='(min-width: 1200px)'
+                        srcset="./images/desctop/img5.jpg 1x, ./images/desctop/img@2x5.jpg 2x">
+                      <source media='(min-width: 768px)'
+                        srcset="./images/tablet/img5.jpg 1x, ./images/tablet/img@2x5.jpg 2x">
+                      <source media='(min-width: 320px)'
+                        srcset="./images/mobile/img5.jpg 1x, ./images/mobile/img@2x5.jpg 2x">
+                      <img src="images/img (5).jpg" class="products__info" alt="фото Веб-сайту">
+                    </picture>
+                      
                       <p class="products__info-text">Технокряк это современная площадка распространения коронавируса. Компании
                           используют эту
                           платформу для цифрового
@@ -115,7 +124,13 @@
               <li class="products__item">
                 <a href="#" class="products__link">
                     <div class="products__wrapper">
-                      <img src="images/img (6).jpg" width="370" class="products__info" alt="Молодь грає волейбол">
+                      <picture>
+                        <source media='(min-width: 1200px)' srcset="./images/desctop/img6.jpg 1x, ./images/desctop/img@2x6.jpg 2x">
+                        <source media='(min-width: 768px)' srcset="./images/tablet/img6.jpg 1x, ./images/tablet/img@2x6.jpg 2x">
+                        <source media='(min-width: 320px)' srcset="./images/mobile/img6.jpg 1x, ./images/mobile/img@2x6.jpg 2x">
+                      <img src="images/img (6).jpg" class="products__info" alt="Молодь грає волейбол">
+                      </picture>
+                      
                       <p class="products__info-text">Технокряк это современная площадка распространения коронавируса. Компании
                         используют эту
                         платформу для цифрового
@@ -131,7 +146,13 @@
               <li class="products__item">
                   <a href="#" class="products__link">
                       <div class="products__wrapper">
-                        <img src="images/img (7).jpg" width="370" class="products__info" alt="Фото товару">
+                      <picture>
+                        <source media='(min-width: 1200px)' srcset="./images/desctop/img7.jpg 1x, ./images/desctop/img@2x7.jpg 2x">
+                        <source media='(min-width: 768px)' srcset="./images/tablet/img7.jpg 1x, ./images/tablet/img@2x7.jpg 2x">
+                        <source media='(min-width: 320px)' srcset="./images/mobile/img7.jpg 1x, ./images/mobile/img@2x7.jpg 2x">
+                        <img src="images/img (7).jpg" class="products__info" alt="Фото товару">
+                      </picture>
+                        
                         <p class="products__info-text">Технокряк это современная площадка распространения коронавируса. Компании
                           используют эту
                           платформу для цифрового
@@ -147,7 +168,13 @@
               <li class="products__item">
                   <a href="#" class="products__link">
                       <div class="products__wrapper">
-                        <img src="images/img (8).jpg" width="370" class="products__info" alt="Фото товару">
+                      <picture>
+                        <source media='(min-width: 1200px)' srcset="./images/desctop/img8.jpg 1x, ./images/desctop/img@2x8.jpg 2x">
+                        <source media='(min-width: 768px)' srcset="./images/tablet/img8.jpg 1x, ./images/tablet/img@2x8.jpg 2x">
+                        <source media='(min-width: 320px)' srcset="./images/mobile/img8.jpg 1x, ./images/mobile/img@2x8.jpg 2x">
+                        <img src="images/img (8).jpg" class="products__info" alt="Фото товару">
+                      </picture>
+                        
                         <p class="products__info-text">Технокряк это современная площадка распространения коронавируса. Компании
                           используют эту
                           платформу для цифрового
@@ -163,7 +190,13 @@
               <li class="products__item">
                   <a href="#" class="products__link">
                       <div class="products__wrapper">
+                        <picture>
+                          <source media='(min-width: 1200px)' srcset="./images/desctop/img9.jpg 1x, ./images/desctop/img@2x9.jpg 2x">
+                          <source media='(min-width: 768px)' srcset="./images/tablet/img9.jpg 1x, ./images/tablet/img@2x9.jpg 2x">
+                          <source media='(min-width: 320px)' srcset="./images/mobile/img9.jpg 1x, ./images/mobile/img@2x9.jpg 2x">
                         <img src="images/img (9).jpg" width="370" class="products__info" alt="Фото двох коробок">
+                        </picture>
+                        
                         <p class="products__info-text">Технокряк это современная площадка распространения коронавируса. Компании
                           используют эту
                           платформу для цифрового
@@ -179,7 +212,13 @@
               <li class="products__item">
                   <a href="#" class="products__link">
                       <div class="products__wrapper">
+                        <picture>
+                          <source media='(min-width: 1200px)' srcset="./images/desctop/img10.jpg 1x, ./images/desctop/img@2x10.jpg 2x">
+                          <source media='(min-width: 768px)' srcset="./images/tablet/img10.jpg 1x, ./images/tablet/img@2x10.jpg 2x">
+                          <source media='(min-width: 320px)' srcset="./images/mobile/img10.jpg 1x, ./images/mobile/img@2x10.jpg 2x">
                         <img src="images/img (10).jpg" width="370" class="products__infoo" alt="Фото монітора">
+                        </picture>
+                        
                         <p class="products__info-text">Технокряк это современная площадка распространения коронавируса. Компании
                           используют эту
                           платформу для цифрового
@@ -195,7 +234,13 @@
               <li class="products__item">
                   <a href="#" class="products__link">
                       <div class="products__wrapper">
+                        <picture>
+                          <source media='(min-width: 1200px)' srcset="./images/desctop/img11.jpg 1x, ./images/desctop/img@2x11.jpg 2x">
+                          <source media='(min-width: 768px)' srcset="./images/tablet/img11.jpg 1x, ./images/tablet/img@2x11.jpg 2x">
+                          <source media='(min-width: 320px)' srcset="./images/mobile/img11.jpg 1x, ./images/mobile/img@2x11.jpg 2x">
                         <img src="images/img (11).jpg" width="370" class="products__info" alt="Фото книжки">
+                        </picture>
+                        
                         <p class="products__info-text">Технокряк это современная площадка распространения коронавируса. Компании
                           используют эту
                           платформу для цифрового
@@ -211,7 +256,13 @@
               <li class="products__item">
                   <a href="#" class="products__link">
                       <div class="products__wrapper">
-                        <img src="images/img (12).jpg" width="370" class="products__info" alt="Фото бірки з написом">
+                        <picture>
+                          <source media='(min-width: 1200px)' srcset="./images/desctop/img12.jpg 1x, ./images/desctop/img@2x12.jpg 2x">
+                          <source media='(min-width: 768px)' srcset="./images/tablet/img12.jpg 1x, ./images/tablet/img@2x12.jpg 2x">
+                          <source media='(min-width: 320px)' srcset="./images/mobile/img12.jpg 1x, ./images/mobile/img@2x12.jpg 2x">
+                          <img src="images/img (12).jpg" width="370" class="products__info" alt="Фото бірки з написом">
+                        </picture>
+                       
                         <p class="products__info-text">Технокряк это современная площадка распространения коронавируса. Компании
                           используют эту
                           платформу для цифрового
@@ -227,7 +278,13 @@
               <li class="products__item">
                   <a href="#" class="products__link">
                       <div class="products__wrapper">
+                        <picture>
+                          <source media='(min-width: 1200px)' srcset="./images/desctop/img13.jpg 1x, ./images/desctop/img@2x13.jpg 2x">
+                          <source media='(min-width: 768px)' srcset="./images/tablet/img13.jpg 1x, ./images/tablet/img@2x13.jpg 2x">
+                          <source media='(min-width: 320px)' srcset="./images/mobile/img13.jpg 1x, ./images/mobile/img@2x13.jpg 2x">
                         <img src="images/img (13).jpg" width="370" class="products__info" alt="Фото ноутбука">
+                        </picture>
+                        
                         <p class="products__info-text">Технокряк это современная площадка распространения коронавируса. Компании
                           используют эту
                           платформу для цифрового
