@@ -186,7 +186,7 @@
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms var(--bezier-timing);
 
   @media screen and (min-width:480px) {
@@ -200,23 +200,24 @@
     padding: 63px 24px;
   }
 }
-/*=======ПОМИЛКА==================
+
 .products__thumb {
   display: flex;
   flex-direction: column;
-  flex-grow: 0;
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-*/
+
 .products__title {
   color: #212121;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
 }
 .products__text {
   margin-top: 4px;
