@@ -83,13 +83,13 @@
 }
 }
 
-.subscribe__sector {
+.subscribe__box {
   margin-right: 12px;
 }
 
 .subscribe__title {
   display: block;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -122,8 +122,10 @@
     color: rgba(255, 255, 255, 0.6);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     width: 450px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (min-width: 1200px) {

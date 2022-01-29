@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru">   
 
 <head>
     <meta charset="UTF-8">
@@ -16,6 +16,7 @@
 </head>
 <body>
     <!--=============================== logo and header======================================-->
+    
     <header class="header">
       <div class="header-menu container">
     
@@ -64,20 +65,37 @@
             </ul>
           </div>
           <div class="header-social">
+            <ul class="header-social__list">
+              <li class="header-social__item">
+                <a class="header-social__link" href="#">Instagram</a>
+              </li>
+              <li class="header-social__item">
+                <a class="header-social__link" href="#">Twitter</a>
+              </li>
+              <li class="header-social__item">
+                <a class="header-social__link" href="#">Facebook</a>
+              </li>
+              <li class="header-social__item">
+                <a class="header-social__link" href="#">LinkedIn</a>
+              </li>
+            </ul>
+            <!-- 
             <ul class="header-social__menu list">
-              <li class="header-social__item aria-label=" Linkedin">
+              <li class="header-social__item>
                 <a class="header-social__link" href="/">Linkedin</a>
               </li>
-              <li class="header-social__item aria-label=" Facebook">
+              <li class="header-social__item aria-label="Facebook">
                 <a class="header-social__link" href="/">Facebook</a>
               </li>
-              <li class="header-social__item aria-label=" Twitter">
+              <li class="header-social__item aria-label="Twitter">
                 <a class="header-social__link" href="/">Twitter</a>
               </li>
-              <li class="header-social__item aria-label=" Instagram">
+              <li class="header-social__item aria-label="Instagram">
                 <a class="header-social__link" href="/">Instagram</a>
               </li>
             </ul>
+            -->
+
           </div>
         </div>
     
@@ -85,14 +103,17 @@
     </header>
   <main>
 <!--===============================================section hero==============================================-->
-    <section class="hero">
+
+  <section class="hero">
         <h1 class="hero__title">Эффективные решения <br>
             для вашего бизнеса</h1>
         <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
     </section>
+
+  
 <!--===============================================section features==========================================-->
 
-    <section class="section">
+    <section class="section ">
       <div class="container">
             <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="features">
@@ -138,31 +159,34 @@
               </li>
           </ul>
       </div>
-    </section>    
+    </section>   
+
+ 
 
 <!--===================================section photo=====================================-->
-<section class="section section--ptn">
+
+<section class="section section__ptn">
           <div class="container">
               <h2 class="section__title">Чем мы занимаемся</h2>
               <ul class="photo">
                   <li class="photo__item">
-                      <div class="photo__description">
-                          <img src="images/programs.jpg" width="370" class="photo-link" alt="програмиравание">
+                      <div class="photo__thumb">
+                          <img src="images/programs.jpg" width="370" class="photo-link" alt="програмиравание" width="370">
                           <div class="photo__overlay">
                               <p class="photo__text">Десктопные приложения</p>
                           </div>
                       </div></li>
                   <li class="photo__item">
-                      <div class="photo__description">
-                          <img src="images/webapplication.jpg" width="370" class="photo-link" alt="вебприложения">
+                      <div class="photo__thumb">
+                          <img src="images/webapplication.jpg" width="370" class="photo-link" alt="вебприложения" width="370">
                           <div class="photo__overlay">
                               <p class="photo__text">Мобильные приложения</p>
                           </div>
                       </div>
                   </li>
                     <li class="photo__item">
-                      <div class="photo__description">
-                          <img src="images/web-security.jpg" width="370" class="photo-link" alt="информбезопасность">
+                      <div class="photo__thumb">
+                          <img src="images/web-security.jpg" width="370" class="photo-link" alt="информбезопасность" width="370">
                           <div class="photo__overlay">
                               <p class="photo__text">Дизайнерские решения</p>
                           </div>
@@ -173,14 +197,22 @@
       </section>
  
 
+
+
   <!--=================================section our team=========================================-->
   
-  <section class="section section--bgc">
+  <section class="section section__team">
           <div class="container">
               <h2 class="section__title">Наша команда</h2>
-              <ul class="team">
+              <ul class="team__list">
                   <li class="team__item">
-                      <img src="images/img (1).jpg" width="270" class="team-photo" alt="фото Игорь Демьяненко">
+                      <picture>
+                        <source media='(min-width: 1200px)' srcset="./images/desctop/img1.jpg 1x, ./images/desctop/img@2x1.jpg 2x">
+                        <source media='(min-width: 768px)' srcset="./images/tablet/img1.jpg 1x, ./images/tablet/img@2x1.jpg 2x">
+                        <source media='(min-width: 320px)' srcset="./images/mobile/img1.jpg 1x, ./images/mobile/img@2x1.jpg 2x">
+                        <img src="images/img(1).jpg"  class="team-photo" alt="фото Игорь Демьяненко">
+                      </picture>
+                      
                       <div class="team__wrapper">
                           <h3 class="team__title">Игорь Демьяненко</h3>
                           <p class="team__text">Product Designer</p>
@@ -217,7 +249,12 @@
                       </div>
                   </li>
                   <li class="team__item">
-                      <img src="images/img (2).jpg" width="270" class="team-photo" alt="фото Ольга Репина">
+                    <picture>
+                      <source media='(min-width: 1200px)' srcset="./images/desctop/img2.jpg 1x, ./images/desctop/img@2x2.jpg 2x">
+                      <source media='(min-width: 768px)' srcset="./images/tablet/img2.jpg 1x, ./images/tablet/img@2x2.jpg 2x">
+                      <source media='(min-width: 320px)' srcset="./images/mobile/img2.jpg 1x, ./images/mobile/img@2x2.jpg 2x">
+                      <img src="images/img(2).jpg" class="team-photo" alt="фото Ольга Репина">
+                    </picture>
                       <div class="team__wrapper">
                           <h3 class="team__title">Ольга Репина</h3>
                           <p class="team__text">Frontend Developer</p>
@@ -254,7 +291,13 @@
                       </div>
                   </li>
                   <li class="team__item">
-                      <img src="images/img (3).jpg" width="270" class="team-photo" alt="фото Николай Тарасов">
+                    <picture>
+                      <source media='(min-width: 1200px)' srcset="./images/desctop/img3.jpg 1x, ./images/desctop/img@2x3.jpg 2x">
+                      <source media='(min-width: 768px)' srcset="./images/tablet/img3.jpg 1x, ./images/tablet/img@2x3.jpg 2x">
+                      <source media='(min-width: 320px)' srcset="./images/mobile/img3.jpg 1x, ./images/mobile/img@2x3.jpg 2x">
+                      <img src="images/img(3).jpg"  class="team-photo" alt="фото Николай Тарасов">
+                    </picture>
+                      
                       <div class="team__wrapper">
                           <h3 class="team__title">Николай Тарасов</h3>
                           <p class="team__text">Marketing</p>
@@ -291,8 +334,13 @@
                       </div>
                   </li>
                   <li class="team__item">
-                      <img src="images/img (4).jpg" width="270" class="team-photo" alt="фото Михаил Ермаков">
-                      <div class="team__wrapper">
+                    <picture>
+                      <source media='(min-width: 1200px)' srcset="./images/desctop/img4.jpg 1x, ./images/desctop/img@2x4.jpg 2x">
+                      <source media='(min-width: 768px)' srcset="./images/tablet/img4.jpg 1x, ./images/tablet/img@2x4.jpg 2x">
+                      <source media='(min-width: 320px)' srcset="./images/mobile/img4.jpg 1x, ./images/mobile/img@2x4.jpg 2x">
+                      <img src="images/img(4).jpg" class="team-photo" alt="фото Михаил Ермаков">
+                    </picture>
+                     <div class="team__wrapper">
                           <h3 class="team__title">Михаил Ермаков</h3>
                           <p class="team__text">UI Designer</p>
                           <ul class="social-icons">
@@ -429,7 +477,7 @@
               </ul>
           </div>
           <form class="subscribe">
-            <div class="subscribe__sector">
+            <div class="subscribe__box">
               <label for="subscribe-email" class="subscribe__title">Подпишитесь на рассылку</label>
               <input id="subscribe-email" class="subscribe__input" type="email" name="email" placeholder="E-mail">
             </div>
@@ -492,6 +540,8 @@
             </form>
         </div>
       </div>
+
+
 <!--=======================================script=================================================-->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile.menu.js"></script>
