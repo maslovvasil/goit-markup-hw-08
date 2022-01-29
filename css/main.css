@@ -105,12 +105,20 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 15px;
   position: relative;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 4px) {
   .header-menu {
-    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /* padding-left: 15px;
      padding-right: 15px;*/
   }
@@ -236,8 +244,9 @@ img {
 
 @media screen and (min-width: 768px) {
   .header-navigation {
-    margin-top: 48px;
-    margin-bottom: 302px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: 40px;
   }
 }
@@ -247,6 +256,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -523,7 +538,7 @@ img {
   content: "";
   display: block;
   position: relative;
-  top: 33px;
+  top: 27px;
   width: 100%;
   height: 4px;
   background-color: var(--text-color-accent);
@@ -535,19 +550,22 @@ img {
   }
 }
 
-.hero {
+/*.hero {
   padding: 200px 0;
+//  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.3))), url(../images/img.jpg);
-  background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/img.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/img.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.5),
+      rgba(47, 48, 58, 0.3)
+    ),
+    url(../images/img.jpg);
 }
-
 .hero__title {
   color: #ffffff;
   font-weight: 900;
@@ -555,25 +573,130 @@ img {
   line-height: 1.36;
   text-align: center;
 }
-
 .hero__button {
   width: 200px;
   height: 50px;
   margin-top: 30px;
   border-radius: 4px;
   border: transparent;
+
   color: #ffffff;
   background-color: var(--text-color-accent);
   cursor: pointer;
-  -webkit-transition: color 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing);
-  -o-transition: color 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing);
-  transition: color 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing);
-}
 
+  transition: color 250ms var(--bezier-timing),
+    background-color 250ms var(--bezier-timing);
+}
 .hero__button:hover,
 .hero__button:focus {
   color: var(--text-color-accent);
   background-color: #ffffff;
+}
+*/
+.hero {
+  padding: 118px 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main-photo-480.jpg");
+  background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-photo-480.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-photo-480.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile/headerimg@2x.jpg");
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/headerimg@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/headerimg@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 118px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet/headerimg.jpg");
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/headerimg.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/headerimg.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet/headerimg@2.jpg");
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/headerimg@2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/headerimg@2.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/desctop/img0.jpg");
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop/img0.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop/img0.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/desctop/img@2x0.jpg");
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop/img@2x0.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop/img@2x0.jpg");
+  }
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
+.hero__btn {
+  display: block;
+  padding: 10px 32px;
+  border: 0px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin: 0 auto;
+  background-color: #2196F3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 250ms var(--bezier-timing);
+  transition: -webkit-transform 250ms var(--bezier-timing);
+  -o-transition: transform 250ms var(--bezier-timing);
+  transition: transform 250ms var(--bezier-timing);
+  transition: transform 250ms var(--bezier-timing), -webkit-transform 250ms var(--bezier-timing);
+}
+.hero__btn:hover, .hero__btn:focus {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 250ms var(--bezier-timing);
+  transition: -webkit-transform 250ms var(--bezier-timing);
+  -o-transition: transform 250ms var(--bezier-timing);
+  transition: transform 250ms var(--bezier-timing);
+  transition: transform 250ms var(--bezier-timing), -webkit-transform 250ms var(--bezier-timing);
 }
 
 @media screen and (min-width: 1200px) {
