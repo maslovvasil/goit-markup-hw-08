@@ -8,7 +8,7 @@
     padding: 0 15px;
     position: relative;
 
-    @media screen and (max-width: 4px) {
+    @media screen and (max-width: 479px) {
       display: flex;
       align-items: center;
        // width: 100%;
@@ -66,7 +66,7 @@
         fill: var(--text-color-accent);
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
         display: none;
     }
 }
@@ -103,18 +103,18 @@
         &.is-open {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+          //  justify-content: space-between;
             transform: translateY(0);
         }
     }
     
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
         display: flex;
         
     }
 }
 .header-nav {
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 767px) {
     align-items: center;
     justify-content: space-between; 
     display: flex;
@@ -123,9 +123,9 @@
 }
 .header-navigation {
   
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
     align-items: center;
-    justify-content: space-between; 
+  //  justify-content: space-between; 
     display: flex;
     margin-left: 40px;
     }
@@ -141,11 +141,11 @@
 
 .header-nav__item {
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         display: block;
         &:not(:last-child) {
            margin-bottom: 32px;
-        }    
+       }    
        }
        
 .header-nav__list & + & {
@@ -275,7 +275,7 @@
     display: none;
 
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
         display: inline-block;
         margin-right: 10px;
 
@@ -302,7 +302,7 @@
   //  @media screen and (max-width: 480px) {
   //      display: none;
   //  }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
         display: none;
     }
 }
@@ -373,7 +373,7 @@ transition: color 250ms var(--bezier-timing);
   height: 4px;
   background-color: var(--text-color-accent);
   border-radius: 2px;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         display: none;
     }
 }
