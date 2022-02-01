@@ -4,8 +4,16 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+ // text-align-last: left;
   color: #ffffff;
+     @media screen and (min-width: 1200px) {
+      text-align: left;
+     
+  }
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+     
+  }
 }
 .fsocial__list {
   display: flex;
@@ -50,17 +58,18 @@
 
 
 .fsocial-title {
+
   margin-top: 20px;
   text-align: center;
   margin-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
-  text-align: left;
+
   margin-right: 93px;
   margin-bottom: 0px;
   }
  @media screen and (min-width: 480px) {
-  text-align: center;
+
   margin-top: 60px;
   margin-bottom: 60px;
   }

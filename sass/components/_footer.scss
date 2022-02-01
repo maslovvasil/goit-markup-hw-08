@@ -6,6 +6,7 @@
 .footer__container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 
     
 }
@@ -143,6 +144,7 @@
 @media screen and (min-width: 1200px) {
   align-items: flex-start;
   margin-right: 70px;
+  text-align: center;
 }
 }
 
@@ -153,11 +155,14 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  text-align: center;
   
-
-  @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199px) {
     margin-bottom: 0px;
-   // text-align: left;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 0px;
+    text-align: center;
   }
 }
