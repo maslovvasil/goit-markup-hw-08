@@ -172,13 +172,16 @@
   fill: #2196f3;
 }
 .form-checkbox {
-    position: relative;
+   position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
     width: 100%;
     cursor: pointer;
+            @media screen and (max-width: 1200px) {
+      
+}
 }
 
 .checkbox-terms {
@@ -213,13 +216,13 @@
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
-    margin-right: 7px;
+    margin-right: 5px;
 }
 
 .checkbox-icon {
     position: absolute;
     top: 3px;
-    left: 12px;
+    left: 9px;
     opacity: 0;
     pointer-events: none;
     
@@ -228,6 +231,10 @@
     border: 2px solid #2196F3;
     border-radius: 2px;
     cursor: pointer;
+        @media screen and (max-width: 1200px) {
+       top: 3px;
+       left: 0;
+}
 }
 
 .checkbox:focus {

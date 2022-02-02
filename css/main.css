@@ -166,17 +166,17 @@ img {
   display: -ms-inline-flexbox;
   display: inline-flex;
   z-index: 2;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-right: -15px;
   border: none;
   background-color: transparent;
-  margin: 10px 0 10px auto;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #000;
   -webkit-transition: color 250ms var(--bezier-timing);
   -o-transition: color 250ms var(--bezier-timing);
   transition: color 250ms var(--bezier-timing);
-}
-.header-button:focus {
-  fill: var(--text-color-accent);
 }
 @media screen and (min-width: 767px) {
   .header-button {
@@ -566,6 +566,12 @@ img {
   .header-nav--current::after {
     display: none;
   }
+}
+
+.icon-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 /*.hero {
@@ -2379,7 +2385,6 @@ img {
   width: 100%;
   cursor: pointer;
 }
-
 .checkbox-terms {
   font-size: 14px;
   line-height: 1.71;
@@ -2415,13 +2420,13 @@ img {
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
-  margin-right: 7px;
+  margin-right: 5px;
 }
 
 .checkbox-icon {
   position: absolute;
   top: 3px;
-  left: 12px;
+  left: 9px;
   opacity: 0;
   pointer-events: none;
   background-color: var(--text-color-accent);
@@ -2429,6 +2434,12 @@ img {
   border: 2px solid #2196F3;
   border-radius: 2px;
   cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .checkbox-icon {
+    top: 3px;
+    left: 0;
+  }
 }
 
 .checkbox:focus {
